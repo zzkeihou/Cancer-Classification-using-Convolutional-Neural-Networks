@@ -24,8 +24,14 @@ The data can be download from https://www.cancerimagingarchive.net/collections/
 - Colab notebook
 - NumPy
 - Pandas
-- Matplotlib and Seaborn
+- Matplotlib 
+- Seaborn
 - scikit-image
-- 
+- Keras
 
 ## EDA
+Pie charts showing the distribution of the images in each category and visualization of random samples of non-kras and kras images
+![image](https://user-images.githubusercontent.com/116041838/229614486-a8067528-1339-4df3-a2d4-30d7b27bc580.png)
+
+## Model Architecture
+
