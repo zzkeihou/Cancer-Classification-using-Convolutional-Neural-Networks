@@ -18,13 +18,13 @@ This project focuses on the classification of colon cancer images based on the p
 To achieve this, a convolutional neural network (CNN) model is implemented to analyze and learn features from cancer images. The entire process includes importing libraries, data preparation, exploratory data analysis (EDA), model architecture design, and model performance evaluation. By accurately classifying colon cancer images based on KRAS mutations and cancer types, this project contributes to the broader goal of improving colon cancer diagnosis and treatment.
 
 ## Data
-The data can be download from https://www.cancerimagingarchive.net/collections/
+The data can be downloaded from https://www.cancerimagingarchive.net/collections/
 
-Label 1: 280 colon kras data (7 cases)
+Label 1: 280 colon kras samples (7 cases)
 
-Label 2: 400 colon non kras data (10 cases)
+Label 2: 400 colon non-kras samples (10 cases)
 
-Label 3: Randomly selected 1000 data from all TCGA cancer, which include:
+Label 3: Randomly selected 1,000 samples from all TCGA cancer types, including:
 
 TCGA-BLCA
 
@@ -57,6 +57,11 @@ TCGA-STAD
 TCGA-THCA
 
 TCGA-UCEC
+
+Before using the data, it is necessary to convert the DICOM (Digital Imaging and Communications in Medicine) files into JPG format. To run the code, open the Cancer image prediction final.ipynb file.
+
+
+
 
 ## Environment and tools
 - Colab notebook
