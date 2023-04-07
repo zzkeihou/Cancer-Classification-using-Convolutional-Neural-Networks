@@ -77,8 +77,9 @@ The distribution of the images in each category and visualization of random samp
 ![image](https://user-images.githubusercontent.com/116041838/229614486-a8067528-1339-4df3-a2d4-30d7b27bc580.png)
 
 Random samples of non-kras and kras images
-![image](https://user-images.githubusercontent.com/116041838/229649713-7d5f2577-3e48-4463-8098-db63d1299636.png)
+![image](https://user-images.githubusercontent.com/116041838/230692143-173e9c6b-e7f2-4da7-93e5-d11e9f597368.png)
 
+![image](https://user-images.githubusercontent.com/116041838/230692170-db06b5e3-fe8c-49b9-9e7a-148cee883b72.png)
 
 ## Model Architecture
 ![image](https://user-images.githubusercontent.com/116041838/229646453-06ce4874-79b6-4c1d-8a62-29bcd067f770.png)
@@ -110,4 +111,4 @@ ROC-AUC curve
 We have trained the model 5 times, obtaining an average accuracy of 0.82 and an ROC-AUC of 0.92. These results suggest that the model demonstrates a relatively strong performance in the classification task. It is essential to note that the average accuracy alone might not provide a comprehensive understanding of the model's performance, particularly in cases of class imbalance. The ROC-AUC score of 0.92 is a more informative metric, as it considers both sensitivity (true positive rate) and specificity (true negative rate). A high ROC-AUC score indicates that the model is effective at distinguishing between the classes while maintaining a low false positive rate. This is generally a desirable characteristic in classification tasks.
 
 ## Acknowledgements
-
+[1] Meng, M., Zhong, K., Jiang, T., Liu, Z., Kwan, H. Y., & Su, T. (2021). The current understanding on the impact of KRAS on colorectal cancer. Biomedicine & Pharmacotherapy, 140, 111717. https://doi.org/10.1016/j.biopha.2021.111717
