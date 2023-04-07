@@ -107,7 +107,7 @@ ROC-AUC curve
 <img width="610" alt="Screen Shot 2023-04-03 at 4 44 22 PM" src="https://user-images.githubusercontent.com/116041838/229650400-d3248ff2-56b5-4a96-bc1a-eee83cc5322b.png">
 
 
-We have trained the model 5 times using cross-validation, obtaining an average accuracy of 0.82 and an ROC-AUC of 0.92. These results suggest that the model demonstrates a relatively strong performance in the classification task. It is essential to note that the average accuracy alone might not provide a comprehensive understanding of the model's performance, particularly in cases of class imbalance. The ROC-AUC score of 0.92 is a more informative metric, as it considers both sensitivity (true positive rate) and specificity (true negative rate). A high ROC-AUC score indicates that the model is effective at distinguishing between the classes while maintaining a low false positive rate. This is generally a desirable characteristic in classification tasks.
+We have trained the model 5 times, obtaining an average accuracy of 0.82 and an ROC-AUC of 0.92. These results suggest that the model demonstrates a relatively strong performance in the classification task. It is essential to note that the average accuracy alone might not provide a comprehensive understanding of the model's performance, particularly in cases of class imbalance. The ROC-AUC score of 0.92 is a more informative metric, as it considers both sensitivity (true positive rate) and specificity (true negative rate). A high ROC-AUC score indicates that the model is effective at distinguishing between the classes while maintaining a low false positive rate. This is generally a desirable characteristic in classification tasks.
 
 ## Acknowledgements
 
