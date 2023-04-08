@@ -81,7 +81,7 @@ Random samples of non-kras and kras images
 
 ![image](https://user-images.githubusercontent.com/116041838/230692170-db06b5e3-fe8c-49b9-9e7a-148cee883b72.png)
 
-## Model Architecture
+## Model Architecture Diagram
 ![image](https://user-images.githubusercontent.com/116041838/229646453-06ce4874-79b6-4c1d-8a62-29bcd067f770.png)
 
 This figure illustrates the architecture of the Convolutional Neural Network (CNN) model for colon cancer classification. The grayscale images with a size of 256x256 pixels are fed into the model, which then processes them through multiple interconnected layers. The model consists of an input layer, followed by alternating Conv2D and MaxPooling2D layers, with BatchNormalization applied after each convolution operation. The Conv2D layers use ReLU activation functions and progressively increase the number of filters (32, 64, 128) to capture intricate patterns in the data. The MaxPooling2D layers have a pool size of 2x2 and help reduce the spatial dimensions while preserving important features.
@@ -108,7 +108,9 @@ ROC-AUC curve
 <img width="610" alt="Screen Shot 2023-04-03 at 4 44 22 PM" src="https://user-images.githubusercontent.com/116041838/229650400-d3248ff2-56b5-4a96-bc1a-eee83cc5322b.png">
 
 
-We have trained the model 5 times, obtaining an average accuracy of 0.82 and an ROC-AUC of 0.92. These results suggest that the model demonstrates a relatively strong performance in the classification task. It is essential to note that the average accuracy alone might not provide a comprehensive understanding of the model's performance, particularly in cases of class imbalance. The ROC-AUC score of 0.92 is a more informative metric, as it considers both sensitivity (true positive rate) and specificity (true negative rate). A high ROC-AUC score indicates that the model is effective at distinguishing between the classes while maintaining a low false positive rate. This is generally a desirable characteristic in classification tasks.
+We have trained the model 5 times, obtaining an average accuracy of .82 and an ROC-AUC of .92. These results suggest that the model demonstrates a relatively strong performance in the classification task. It is essential to note that the average accuracy alone might not provide a comprehensive understanding of the model's performance, particularly in cases of class imbalance. The ROC-AUC score of .92 is a more informative metric, as it considers both sensitivity (true positive rate) and specificity (true negative rate). A high ROC-AUC score indicates that the model is effective at distinguishing between the classes while maintaining a low false positive rate. This is generally a desirable characteristic in classification tasks.
 
 ## Acknowledgements
 [1] Meng, M., Zhong, K., Jiang, T., Liu, Z., Kwan, H. Y., & Su, T. (2021). The current understanding on the impact of KRAS on colorectal cancer. Biomedicine & Pharmacotherapy, 140, 111717. https://doi.org/10.1016/j.biopha.2021.111717
+
+[2] Yamashita, R., Nishio, M., G, R. K., DO, & Togashi, K. (2018). Convolutional neural networks: an overview and application in radiology. Insights Into Imaging, 9(4), 611–629. https://doi.org/10.1007/s13244-018-0639-9
