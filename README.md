@@ -3,7 +3,7 @@ Colon Cancer Classification using CNN
 
 Table of Contents
 1. Overview
-2. Data
+2. Data Sources
 3. Environment and tools
 4. EDA
 5. Model Architecture
@@ -17,8 +17,15 @@ This project focuses on the classification of colon cancer images based on the p
 
 To achieve this, a convolutional neural network (CNN) model is implemented to analyze and learn features from cancer images. The entire process includes importing libraries, data preparation, exploratory data analysis (EDA), model architecture design, and model performance evaluation. By accurately classifying colon cancer images based on KRAS mutations and cancer types, this project contributes to the broader goal of improving colon cancer diagnosis and treatment.
 
-## Data
-The data can be downloaded from https://www.cancerimagingarchive.net/collections/
+## Data Sources
+The Cancer Genome Atlas (TCGA) colon adenocarcinoma data collection is part of a broader effort to create a scientific community focused on linking cancer phenotypes to genetics. Clinical, genomic, and pathological data are stored in the Genetic Data Commons (GDC) portal, while radiological data is housed in the Cancer Imaging Archive (TCIA). We searched for colorectal cancer collections using the TCIA radiology portal, added public cancer data series to the cart, and downloaded a manifest file with all the COAD data. To access and store this file type, we connected to the NBIA Data Retriever. The data can be downloaded from https://www.cancerimagingarchive.net/collections/
+
+Control Group: Kras
+KRAS mutations contribute to the development and progression of colorectal cancers. Our study examines the impact of KRAS gene mutations on colorectal cancer prediction models, comparing normal non-KRAS colorectal cancer to KRAS-colorectal cancer to determine if gene mutations affect prediction accuracy.
+
+Experimental Group: Non-Kras/ ALL-TCGA
+
+
 
 Label 1: 280 colon kras samples (7 cases)
 
