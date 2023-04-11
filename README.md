@@ -67,7 +67,13 @@ TCGA-UCEC
 
 Before using the data, it is necessary to convert the DICOM (Digital Imaging and Communications in Medicine) files into JPG format. To run the code, open the Cancer image prediction final.ipynb file.
 
+```python
+#Converting a group of DICOM (Digital Imaging and Communications in Medicine) images into JPG format.
+dicom_dir = "/content/drive/MyDrive/Cancer project/COAD/TCGA-COAD"
+export_location = "/content/drive/MyDrive/Cancer project/COAD/COAD_JPG"
 
+dicom2jpg.dicom2jpg(dicom_dir, export_location)
+```
 
 
 ## Environment and tools
