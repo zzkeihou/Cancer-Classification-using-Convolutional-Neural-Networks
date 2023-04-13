@@ -1,14 +1,20 @@
 # Colon-cancer-classification
 Colon Cancer Classification using CNN
 
-Table of Contents
-1. Overview
-2. Data Sources
-3. Environment and tools
-4. EDA
-5. Model Architecture
-6. Model Performance
-7. Acknowledgements
+<details>
+  <summary>Table of Contents</summary>
+
+  1. [Overview](#overview)
+  2. [Data Sources](#data-sources)
+  3. [Environment and tools](#environment-and-tools)
+  4. [EDA](#eda)
+  5. [Model Architecture](#model-architecture-diagram)
+  6. [Model Performance](#model-performance)
+  7. [Acknowledgements](#acknowledgements)
+
+</details>
+
+  
 
 ## Overview
 Colon cancer, also known as colorectal cancer, is a type of cancer that originates in the colon or rectum. It is one of the most common types of cancer worldwide, and early detection plays a crucial role in improving treatment outcomes. KRAS (Kirsten Rat Sarcoma viral oncogene homolog) is a gene that plays a significant role in cell signaling pathways, controlling cell growth and proliferation. Mutations in the KRAS gene are associated with various types of cancer, including colon cancer. In colon cancer patients, approximately 40% have KRAS mutations, which can impact treatment strategies and prognosis.
@@ -85,6 +91,53 @@ dicom2jpg.dicom2jpg(dicom_dir, export_location)
 - scikit-image
 - Keras
 
+To run the code, open the Cancer image prediction final.ipynb file.
+
+```python
+## **Import libraries**
+
+#install dicon2jpg
+!pip install dicom2jpg #used to convert DICOM images into JPG format
+
+import dicom2jpg
+
+# Import library for splitting folders
+!pip install split-folders
+import splitfolders
+
+# Import main libraries
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import cv2
+import seaborn as sns
+from matplotlib.image import imread 
+from PIL import Image
+import tensorflow as tf
+from sklearn.metrics import classification_report, confusion_matrix
+
+# Import libraries for image preprocessing
+from skimage import exposure
+
+# Import libraries for data augmentation and splitting
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from sklearn.model_selection import train_test_split
+
+# Import libraries for CNN model building
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Activation, Dropout, Flatten, Dense, Conv2D, MaxPooling2D, BatchNormalization
+from tensorflow.keras.callbacks import EarlyStopping
+
+# Ignore warnings
+import warnings
+warnings.filterwarnings('ignore')
+
+#Visualizing a Keras model's architecture
+!pip install pydot graphviz
+from tensorflow.keras.utils import plot_model
+import matplotlib.image as mpimg
+```
 ## EDA
 The distribution of the images in each category and visualization of random samples of non-kras and kras images
 ![image](https://user-images.githubusercontent.com/116041838/229614486-a8067528-1339-4df3-a2d4-30d7b27bc580.png)
