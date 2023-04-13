@@ -27,12 +27,13 @@ To achieve this, a convolutional neural network (CNN) model is implemented to an
 The Cancer Genome Atlas (TCGA) colon adenocarcinoma data collection is part of a broader effort to create a scientific community focused on linking cancer phenotypes to genetics. Clinical, genomic, and pathological data are stored in the Genetic Data Commons (GDC) portal, while radiological data is housed in the Cancer Imaging Archive (TCIA). We searched for colorectal cancer collections using the TCIA radiology portal, added public cancer data series to the cart, and downloaded a manifest file with all the COAD data. To access and store this file type, we connected to the NBIA Data Retriever. The data can be downloaded from https://www.cancerimagingarchive.net/collections/
 
 Control Group: Kras
-KRAS mutations contribute to the development and progression of colorectal cancers. Our study examines the impact of KRAS gene mutations on colorectal cancer prediction models, comparing normal non-KRAS colorectal cancer to KRAS-colorectal cancer to determine if gene mutations affect prediction accuracy.
+
+KRAS mutations contribute to the development and progression of colorectal cancers. Our study examines the impact of KRAS gene mutations on colorectal cancer prediction models, comparing non-KRAS colorectal cancer to KRAS-colorectal cancer to determine if gene mutations affect prediction accuracy.
 
 Experimental Group: Non-Kras/ ALL-TCGA
 
 
-
+### Datasets and Sample Distribution for TCGA Cancer Types
 Label 1: 280 colon kras samples (7 cases)
 
 Label 2: 400 colon non-kras samples (10 cases)
